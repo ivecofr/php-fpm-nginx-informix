@@ -59,9 +59,6 @@ RUN apt-get update \
         gd \
         zip \
         intl \
-        opcache \
-    && pecl install xdebug \
-    && docker-php-ext-enable xdebug \
     && apt-get clean \
     && rm -rf /var/cache/apt/lists \
     && rm -rf /var/tmp/* /tmp/*
